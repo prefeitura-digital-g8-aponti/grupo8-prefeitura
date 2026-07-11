@@ -151,13 +151,13 @@ body {
   font-weight: 700;
 }
 
-/* Container flutuante do QR Code */
+/* Container flutuante do QR Code - Ajustado para o canto inferior direito acima do toolbar */
 .qrcode-container {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 80px; /* Aumentado para subir e ficar rente ao topo do toolbar do mapa */
+  right: 24px; /* Movido definitivamente para o lado direito */
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 12px;
+  padding: 10px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   text-align: center;
@@ -169,21 +169,21 @@ body {
 }
 
 .qrcode-container p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .qrcode-container img {
-  width: 100px;
-  height: 100px;
+  width: 90px; /* Uma leve redução para encaixar perfeitamente sem poluir o visual */
+  height: 90px;
   display: block;
 }
 
-/* Esconde o QR Code em telas mobile para evitar sobreposição */
+/* Esconde o QR Code em telas mobile para manter a legibilidade */
 @media (max-width: 768px) {
   .qrcode-container {
     display: none;
