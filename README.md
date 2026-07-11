@@ -8,6 +8,10 @@
 
 **Turma:** Turma 5 – Turno da Tarde
 
+**Metodologia:** Scrum
+
+**Ferramenta:** Github Projects
+
 ---
 ### 👥 Integrantes
 
