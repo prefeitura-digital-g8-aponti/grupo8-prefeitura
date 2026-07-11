@@ -39,19 +39,17 @@ Este projeto consiste no planejamento de um **Sistema Integrado para a Prefeitur
 # 🗺️ Mapa de Navegação da Documentação (Sumário)
 Para acessar o planejamento completo e detalhado deste projeto, utilize os links da nossa **Wiki / Pasta Docs** abaixo:
 
-1. [**Introdução e Contextualização**](./docs/wiki.pdf) — O desafio da gestão pública e os objetivos do sistema.
+1. **[Introdução & Contextualização](Introducao-e-Contextualizacao)** — O desafio do isolamento de sistemas legados públicos.
 
-2. [**Escopo e Funcionalidades**](./docs/wiki.pdf) — Detalhamento dos 7 módulos mapeados.
+3. **[Técnicas de Storytelling](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Tecnicas%E2%80%90de%E2%80%90Storytelling)** — Análise de personas (Cidadão e Servidor Público) aplicadas ao negócio.
 
-3. [**Justificativa Metodológica (Scrum)**](./docs/wiki.pdf) — Como organizamos nosso fluxo de trabalho no GitHub Projects.
+5. **[Engenharia de Requisitos](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Engenharia%E2%80%90de%E2%80%90Requisitos)** — Matriz completa de Requisitos Funcionais (RFs) e Não Funcionais (RNFs).
 
-4. [**Arquitetura da Solução (SOA & ESB)**](./docs/wiki.pdf) — Diagrama de fluxo de dados e integrações.
+7. **[Metodologia & Product Backlog](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Metodologia%E2%80%90e%E2%80%90Product%E2%80%90Backlog)** — A estrutura do framework Scrum e priorização de funcionalidades.
 
-5. [**Planejamento de Backlogs e Sprints**](./docs/wiki.pdf) — O Product Backlog, as prioridades e a divisão da Sprint 01.
+9. **[Arquitetura da Solução (SOA)](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Arquitetura%E2%80%90da%E2%80%90Solucao)** — O papel do Enterprise Service Bus (ESB) na integração dos sistemas.
 
-6. [**Matriz de Dependências e Responsabilidades**](./docs/wiki.pdf) — Quem faz o quê e quais funcionalidades possuem nós de dependência.
-
-7. [**Futura Pipeline de CI/CD & DevOps**](./docs/wiki.pdf) — Planejamento de automação de Build, Testes, Deploy e Monitoramento.
+11. **[Planejamento DevOps](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Planejamento%E2%80%90DevOps)** — Desenho conceitual da pipeline de Integração e Entrega Contínua (CI/CD).
 
 ---
 
