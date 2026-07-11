@@ -2,14 +2,14 @@
 
 ![Proof HTML](https://github.com/prefeitura-digital-g8-aponti/demo-repository/actions/workflows/proof-html.yml/badge.svg)
 
-## Grupo 8 - Sistema Integrado da Prefeitura Municipal
+# 🏛️ Projeto Acadêmico — Cenário 8: Prefeitura Municipal
 
 **Disciplina:** DevOps
 
 **Turma:** Turma 5 – Turno da Tarde
 
 ---
-### Integrantes
+### 👥 Integrantes
 
 - Gabriela Pires
     
@@ -17,190 +17,43 @@
     
 - Rafael Albuquerque
 
-### Estrutura do projeto
+### 📁 Estrutura do Repositório
 ```
 📁 prefeitura-soa/
 │
-├── README.md                 ← documentação completa
+├── README.md               ← Guia de entrada e mapa de navegação
 ├── docs/
-│   ├── apresentacao.pptx
-│   └── imagens/              ← capturas do GitHub Projects 
+│   ├── apresentacao.pptx   ← Slides para a apresentação de 5 minutos
+│   └── imagens/            ← Capturas do GitHub Projects 
 ├── .github/
-│   └── workflows/            ← futuramente, pipeline CI/CD
-└── src/                      ← estrutura do projeto (caso seja implementado)
+│   └── workflows/          ← Futura automação da pipeline CI/CD
+└── src/                    ← Código-fonte dos serviços SOA
 ```
 ---
-# Sumário
 
-- Introdução
-    
-- Contextualização
-    
-- Objetivos
-    
-- Escopo do Projeto
-    
-- Metodologia de Desenvolvimento
-    
-- Arquitetura da Solução
-    
-- Funcionalidades do Sistema
-    
-- Product Backlog
-    
-- Sprint Backlog
-    
-- Organização do Projeto
-    
-- Priorização das Atividades
-    
-- Dependências entre Funcionalidades
-    
-- Distribuição das Responsabilidades
-    
-- Planejamento da Pipeline CI/CD
-    
-- Considerações Finais
+## 🚀 Visão Geral do Projeto
+Este projeto consiste no planejamento de um **Sistema Integrado para a Prefeitura Municipal**. A solução resolve o problema de isolamento de sistemas legados de secretarias (IPTU, Saúde, Educação, RH, etc.) utilizando uma **Arquitetura Orientada a Serviços (SOA)** mediada por um **Enterprise Service Bus (ESB)**, com gestão de tarefas baseada no framework ágil **Scrum**.
 
 ---
-# Introdução
 
-A transformação digital dos serviços públicos tem como objetivo um atendimento mais eficaz à população e aprimorar a gestão das informações entre os diferentes setores de uma Prefeitura Municipal. No entanto, muitas prefeituras ainda usam sistemas desenvolvidos em épocas diferentes, utilizando tecnologias distintas e com pouca interação entre eles.
+# 🗺️ Mapa de Navegação da Documentação (Sumário)
+Para acessar o planejamento completo e detalhado deste projeto, utilize os links da nossa **Wiki / Pasta Docs** abaixo:
 
-A falta de integração gera problemas e retrabalho, duplicidade de informações e dificuldades para manutenção.
+1. [**Introdução e Contextualização**](./docs/wiki.pdf) — O desafio da gestão pública e os objetivos do sistema.
 
-Neste contexto, este projeto propõe o planejamento da criação de um **Sistema Integrado à Prefeitura Municipal**, utilizando práticas ágeis e uma arquitetura orientada a serviços. O sistema abrange os módulos de IPTU, Tributos, Protocolos, Saúde, Educação, Recursos Humanos (RH) e Licitações.
+2. [**Escopo e Funcionalidades**](./docs/wiki.pdf) — Detalhamento dos 7 módulos mapeados.
 
-A proposta foi elaborada com base nos conceitos aprendidos durante a disciplina, utilizando a metodologia Scrum para organização das atividades e a arquitetura **SOA (Service-Oriented Architecture)** para integração entre diferentes serviços da prefeitura.
+3. [**Justificativa Metodológica (Scrum)**](./docs/wiki.pdf) — Como organizamos nosso fluxo de trabalho no GitHub Projects.
 
-# Contextualização
-    
-Uma Prefeitura Municipal é responsável por diversos serviços essenciais para a população, cada um atendendo necessidades específicas das secretarias municipais.
+4. [**Arquitetura da Solução (SOA & ESB)**](./docs/wiki.pdf) — Diagrama de fluxo de dados e integrações.
 
-Entre os principais setores estão:
+5. [**Planejamento de Backlogs e Sprints**](./docs/wiki.pdf) — O Product Backlog, as prioridades e a divisão da Sprint 01.
 
-- IPTU;
-    
-- Tributos;
-    
-- Protocolos;
-    
-- Saúde;
-    
-- Educação;
-    
-- Recursos Humanos;
-    
-- Licitações.
-    
-Na maioria das administrações públicas, esses setores empregam sistemas autônomos, desenvolvidos em momentos diferentes e utilizando tecnologias variadas.
+6. [**Matriz de Dependências e Responsabilidades**](./docs/wiki.pdf) — Quem faz o quê e quais funcionalidades possuem nós de dependência.
 
-Essa situação acaba provocando vários problemas, como:
-
-- dificuldade de comunicação entre sistemas;
-    
-- duplicidade de cadastros;
-    
-- retrabalho operacional;
-    
-- dificuldade de manutenção;
-    
-- baixa integração entre secretarias;
-    
-- crescimento limitado da infraestrutura tecnológica
-    
-Assim, é preciso encontrar uma solução que integre os serviços municipais sem eliminar completamente os sistemas já existentes.
+7. [**Futura Pipeline de CI/CD & DevOps**](./docs/wiki.pdf) — Planejamento de automação de Build, Testes, Deploy e Monitoramento.
 
 ---
-# Objetivos
-    
-## Objetivo Geral
 
-Planejar o desenvolvimento de um Sistema Integrado para a Prefeitura Municipal utilizando a metodologia ágil **Scrum** e a **arquitetura SOA**, organizando as atividades necessárias para uma futura implementação e para a construção de uma **pipeline de CI/CD.**
-
-## Objetivos Específicos
-
-- Organizar o desenvolvimento utilizando o framework Scrum;
-    
-- Definir a arquitetura mais adequada para o cenário proposto;
-    
-- Levantar todas as funcionalidades do sistema;
-    
-- Organizar as atividades utilizando o GitHub Projects;
-    
-- Definir prioridades para o desenvolvimento das funcionalidades;
-    
-- Distribuir as responsabilidades entre os integrantes da equipe;
-    
-- Planejar uma futura pipeline de Integração Contínua e Entrega Contínua (CI/CD).
-
----
-# Escopo do Projeto
-
-Os módulos neste projeto são:
-
-| Módulo           | Descrição                                                       |
-| ---------------- | --------------------------------------------------------------- |
-| IPTU             | Consulta de débitos, emissão de guias e histórico de pagamentos |
-| Tributos         | Emissão de DAM, consulta e gerenciamento tributário             |
-| Protocolos       | Abertura e acompanhamento de solicitações                       |
-| Saúde            | Prontuário eletrônico e cadastro de pacientes                   |
-| Educação         | Matrículas, gerenciamento de vagas e turmas                     |
-| Recursos Humanos | Cadastro e gerenciamento de servidores municipais               |
-| Licitações       | Controle e acoplamento dos processos licitatórios               |
-
-Cada módulo será responsável por um conjunto específico de serviços, permitindo maior organização e integração entre as diferentes áreas da Prefeitura.
-
-# Metodologia de Desenvolvimento
-    
-## Scrum
-
-Para o planejamento do projeto foi escolhida a metodologia Scrum.
-
-O Scrum estrutura o desenvolvimento em ciclos curtos conhecidos como **Sprints**, o que possibilita o planejamento, acompanhamento e entrega gradual das atividades.
-
-Essa metodologia foi escolhida porque facilita a colaboração em equipe, melhora a organização das tarefas e permite adaptações durante o desenvolvimento do projeto.
-
-## Justificativa da escolha
-
-A utilização do Scrum oferece diversas vantagens para este projeto:
-
-- planejamento das atividades por Sprint;
-    
-- melhor organização do desenvolvimento;
-    
-- acompanhamento constante do progresso;
-    
-- comunicação entre os integrantes;
-    
-- adaptação às mudanças;
-    
-- entrega contínua de valor.
-    
-O Scrum possibilita a divisão do desenvolvimento em etapas menores, uma vez que o sistema conta com vários módulos independentes, o que torna mais fácil o gerenciamento das atividades.
-
-Fluxo do Github Projects:
-```
-Product Backlog
-
-      ↓
-
-Sprint Backlog
-
-      ↓
-
-    Todo
-
-      ↓
-
-In Progress
-
-      ↓
-
-In Review / Testing
-
-      ↓
-
-    Done
-```
----
+# Acompanhamento Operacional
+🗓️ **Quadro Ágil:** O progresso em tempo real das nossas atividades e critérios de aceite pode ser verificado diretamente no nosso **GitHub Projects** vinculado à organização.
