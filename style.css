@@ -1,12 +1,14 @@
 :root {
-  --bg-gradient-start: #f0fdf4;
-  --bg-gradient-end: #e0f2fe;
   --text-main: #0f172a;
   --text-muted: #475569;
-  --primary-color: #004b7c; /* Azul extraído do logo */
+  --primary-color: #004b7c;
   --primary-hover: #00365a;
-  --secondary-color: #10b981; /* Verde base */
-  --card-bg: #ffffff;
+  --card-bg: rgba(
+    255,
+    255,
+    255,
+    0.92
+  ); /* Fundo branco levemente transparente para o efeito vidro */
 }
 
 * {
@@ -17,11 +19,13 @@
 }
 
 body {
-  background-image: linear-gradient(
-    135deg,
-    var(--bg-gradient-start) 0%,
-    var(--bg-gradient-end) 100%
-  );
+  /* Fundo misturando a cor translúcida com a SUA imagem local salva */
+  background-image:
+    linear-gradient(rgba(240, 253, 244, 0.88), rgba(224, 242, 254, 0.88)),
+    url("fundo-gps.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -31,11 +35,15 @@ body {
 
 .container {
   background-color: var(--card-bg);
+  backdrop-filter: blur(
+    8px
+  ); /* Cria o efeito de vidro desfocado atrás do cartão */
+  -webkit-backdrop-filter: blur(8px);
   width: 100%;
   max-width: 480px;
   padding: 2.5rem 1.5rem;
   border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   text-align: center;
   animation: fadeIn 0.8s ease-out;
 }
@@ -64,18 +72,42 @@ body {
 .links-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .link-btn {
-  display: block;
-  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo geral */
+  position: relative;
+  padding: 12px 20px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+}
+
+/* Bolinha branca com a logo da marca dentro */
+.icon-circle {
+  position: absolute;
+  left: 12px; /* Mantém o ícone fixo à esquerda do botão */
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .link-btn.primary {
@@ -103,7 +135,7 @@ body {
 
 .divider {
   height: 1px;
-  background-color: #e2e8f0;
+  background-color: #cbd5e1;
   margin: 1.5rem 0 0.5rem 0;
 }
 
