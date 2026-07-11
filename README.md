@@ -59,3 +59,51 @@
 - Planejamento da Pipeline CI/CD
     
 - Considerações Finais
+
+# Introdução
+
+A transformação digital dos serviços públicos tem como objetivo um atendimento mais eficaz à população e aprimorar a gestão das informações entre os diferentes setores de uma Prefeitura Municipal. No entanto, muitas prefeituras ainda usam sistemas desenvolvidos em épocas diferentes, utilizando tecnologias distintas e com pouca interação entre eles.
+
+A falta de integração gera problemas e retrabalho, duplicidade de informações e dificuldades para manutenção.
+
+Neste contexto, este projeto propõe o planejamento da criação de um **Sistema Integrado à Prefeitura Municipal**, utilizando práticas ágeis e uma arquitetura orientada a serviços. O sistema abrange os módulos de IPTU, Tributos, Protocolos, Saúde, Educação, Recursos Humanos (RH) e Licitações.
+
+A proposta foi elaborada com base nos conceitos aprendidos durante a disciplina, utilizando a metodologia Scrum para organização das atividades e a arquitetura **SOA (Service-Oriented Architecture)** para integração entre diferentes serviços da prefeitura.
+
+# Contextualização
+    
+Uma Prefeitura Municipal é responsável por diversos serviços essenciais para a população, cada um atendendo necessidades específicas das secretarias municipais.
+
+Entre os principais setores estão:
+
+- IPTU;
+    
+- Tributos;
+    
+- Protocolos;
+    
+- Saúde;
+    
+- Educação;
+    
+- Recursos Humanos;
+    
+- Licitações.
+    
+Na maioria das administrações públicas, esses setores empregam sistemas autônomos, desenvolvidos em momentos diferentes e utilizando tecnologias variadas.
+
+Essa situação acaba provocando vários problemas, como:
+
+- dificuldade de comunicação entre sistemas;
+    
+- duplicidade de cadastros;
+    
+- retrabalho operacional;
+    
+- dificuldade de manutenção;
+    
+- baixa integração entre secretarias;
+    
+- crescimento limitado da infraestrutura tecnológica
+    
+Assim, é preciso encontrar uma solução que integre os serviços municipais sem eliminar completamente os sistemas já existentes.
