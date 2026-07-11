@@ -150,3 +150,57 @@ Os módulos neste projeto são:
 | Licitações       | Controle e acoplamento dos processos licitatórios               |
 
 Cada módulo será responsável por um conjunto específico de serviços, permitindo maior organização e integração entre as diferentes áreas da Prefeitura.
+
+# Metodologia de Desenvolvimento
+    
+## Scrum
+
+Para o planejamento do projeto foi escolhida a metodologia Scrum.
+
+O Scrum estrutura o desenvolvimento em ciclos curtos conhecidos como **Sprints**, o que possibilita o planejamento, acompanhamento e entrega gradual das atividades.
+
+Essa metodologia foi escolhida porque facilita a colaboração em equipe, melhora a organização das tarefas e permite adaptações durante o desenvolvimento do projeto.
+
+## Justificativa da escolha
+
+A utilização do Scrum oferece diversas vantagens para este projeto:
+
+- planejamento das atividades por Sprint;
+    
+- melhor organização do desenvolvimento;
+    
+- acompanhamento constante do progresso;
+    
+- comunicação entre os integrantes;
+    
+- adaptação às mudanças;
+    
+- entrega contínua de valor.
+    
+O Scrum possibilita a divisão do desenvolvimento em etapas menores, uma vez que o sistema conta com vários módulos independentes, o que torna mais fácil o gerenciamento das atividades.
+
+Fluxo do Github Projects:
+```
+Product Backlog
+
+      ↓
+
+Sprint Backlog
+
+      ↓
+
+    Todo
+
+      ↓
+
+In Progress
+
+      ↓
+
+In Review / Testing
+
+      ↓
+
+    Done
+```
+---
