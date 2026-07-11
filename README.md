@@ -70,4 +70,8 @@ Para acessar o planejamento completo e detalhado deste projeto, utilize os links
 ---
 
 # Acompanhamento Operacional
-🗓️ **Quadro Ágil:** O progresso em tempo real das nossas atividades e critérios de aceite pode ser verificado diretamente no nosso **GitHub Projects** vinculado à organização.
+
+Todo o acompanhamento operacional da Sprint é realizado através do **GitHub Projects**, permitindo visualizar o fluxo de trabalho da equipe em tempo real, desde o Product Backlog até a conclusão das atividades.
+
+🔗 **Quadro de Gerenciamento da Sprint:**
+https://github.com/orgs/prefeitura-digital-g8-aponti/projects/1
