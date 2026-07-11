@@ -15,3 +15,47 @@
 - Luiz Felipe Gomes
     
 - Rafael Albuquerque
+
+### Estrutura do projeto
+```
+📁 prefeitura-soa/
+│
+├── README.md                 ← documentação completa
+├── docs/
+│   ├── apresentacao.pptx
+│   └── imagens/              ← capturas do GitHub Projects 
+├── .github/
+│   └── workflows/            ← futuramente, pipeline CI/CD
+└── src/                      ← estrutura do projeto (caso seja implementado)
+```
+# Sumário
+
+- Introdução
+    
+- Contextualização
+    
+- Objetivos
+    
+- Escopo do Projeto
+    
+- Metodologia de Desenvolvimento
+    
+- Arquitetura da Solução
+    
+- Funcionalidades do Sistema
+    
+- Product Backlog
+    
+- Sprint Backlog
+    
+- Organização do Projeto
+    
+- Priorização das Atividades
+    
+- Dependências entre Funcionalidades
+    
+- Distribuição das Responsabilidades
+    
+- Planejamento da Pipeline CI/CD
+    
+- Considerações Finais
