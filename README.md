@@ -8,6 +8,7 @@
 
 **Turma:** Turma 5 – Turno da Tarde
 
+---
 ### Integrantes
 
 - Gabriela Pires
@@ -28,6 +29,7 @@
 │   └── workflows/            ← futuramente, pipeline CI/CD
 └── src/                      ← estrutura do projeto (caso seja implementado)
 ```
+---
 # Sumário
 
 - Introdução
@@ -60,6 +62,7 @@
     
 - Considerações Finais
 
+---
 # Introdução
 
 A transformação digital dos serviços públicos tem como objetivo um atendimento mais eficaz à população e aprimorar a gestão das informações entre os diferentes setores de uma Prefeitura Municipal. No entanto, muitas prefeituras ainda usam sistemas desenvolvidos em épocas diferentes, utilizando tecnologias distintas e com pouca interação entre eles.
@@ -107,3 +110,43 @@ Essa situação acaba provocando vários problemas, como:
 - crescimento limitado da infraestrutura tecnológica
     
 Assim, é preciso encontrar uma solução que integre os serviços municipais sem eliminar completamente os sistemas já existentes.
+
+---
+# Objetivos
+    
+## Objetivo Geral
+
+Planejar o desenvolvimento de um Sistema Integrado para a Prefeitura Municipal utilizando a metodologia ágil **Scrum** e a **arquitetura SOA**, organizando as atividades necessárias para uma futura implementação e para a construção de uma **pipeline de CI/CD.**
+
+## Objetivos Específicos
+
+- Organizar o desenvolvimento utilizando o framework Scrum;
+    
+- Definir a arquitetura mais adequada para o cenário proposto;
+    
+- Levantar todas as funcionalidades do sistema;
+    
+- Organizar as atividades utilizando o GitHub Projects;
+    
+- Definir prioridades para o desenvolvimento das funcionalidades;
+    
+- Distribuir as responsabilidades entre os integrantes da equipe;
+    
+- Planejar uma futura pipeline de Integração Contínua e Entrega Contínua (CI/CD).
+
+---
+# Escopo do Projeto
+
+Os módulos neste projeto são:
+
+| Módulo           | Descrição                                                       |
+| ---------------- | --------------------------------------------------------------- |
+| IPTU             | Consulta de débitos, emissão de guias e histórico de pagamentos |
+| Tributos         | Emissão de DAM, consulta e gerenciamento tributário             |
+| Protocolos       | Abertura e acompanhamento de solicitações                       |
+| Saúde            | Prontuário eletrônico e cadastro de pacientes                   |
+| Educação         | Matrículas, gerenciamento de vagas e turmas                     |
+| Recursos Humanos | Cadastro e gerenciamento de servidores municipais               |
+| Licitações       | Controle e acoplamento dos processos licitatórios               |
+
+Cada módulo será responsável por um conjunto específico de serviços, permitindo maior organização e integração entre as diferentes áreas da Prefeitura.
