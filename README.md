@@ -67,6 +67,8 @@ Para acessar o planejamento completo e detalhado deste projeto, utilize os links
 
 10. **[Planejamento DevOps](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Planejamento%E2%80%90DevOps)** — Desenho conceitual da pipeline de Integração e Entrega Contínua (CI/CD).
 
+11. **[Modelagem do Banco de Dados - Educação](https://github.com/prefeitura-digital-g8-aponti/grupo8-prefeitura/wiki/Modelagem-do-Banco-de-Dados-–-Educação)** – Estrutura do banco responsável pelo gerenciamento de vagas escolares.
+
 ---
 
 # Acompanhamento Operacional
