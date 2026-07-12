@@ -1,12 +1,9 @@
 :root {
-  --bg-gradient-start: #f0fdf4;
-  --bg-gradient-end: #e0f2fe;
   --text-main: #0f172a;
   --text-muted: #475569;
-  --primary-color: #004b7c; /* Azul extraído do logo */
+  --primary-color: #004b7c;
   --primary-hover: #00365a;
-  --secondary-color: #10b981; /* Verde base */
-  --card-bg: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.94);
 }
 
 * {
@@ -17,34 +14,37 @@
 }
 
 body {
-  background-image: linear-gradient(
-    135deg,
-    var(--bg-gradient-start) 0%,
-    var(--bg-gradient-end) 100%
-  );
+  background-image:
+    linear-gradient(rgba(240, 253, 244, 0.85), rgba(224, 242, 254, 0.85)),
+    url("fundo-gps.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 2rem 1rem;
 }
 
 .container {
   background-color: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 100%;
-  max-width: 480px;
+  max-width: 450px;
+  margin: 4vh auto; /* Adiciona uma margem fluida no topo e no fundo */
   padding: 2.5rem 1.5rem;
   border-radius: 24px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   text-align: center;
-  animation: fadeIn 0.8s ease-out;
 }
 
 .profile-img {
-  width: 160px;
+  width: 140px;
   height: auto;
   margin-bottom: 1rem;
   border-radius: 12px;
+  display: inline-block;
 }
 
 .title {
@@ -62,20 +62,55 @@ body {
 }
 
 .links-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: block;
 }
 
 .link-btn {
   display: block;
-  padding: 14px 20px;
+  position: relative;
+  padding: 14px 16px 14px 60px; /* Dá espaço idêntico na esquerda para o ícone fixo */
+  margin-bottom: 12px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
   border: 2px solid transparent;
+  text-align: left; /* Garante o título alinhado de forma organizada */
+  min-height: 52px;
+}
+
+/* Força o texto interno a alinhar perfeitamente no meio vertical */
+.link-btn span {
+  display: block;
+  line-height: 20px;
+}
+
+/* Pequeno círculo fixado perfeitamente na mesma altura da frase do título */
+.icon-circle {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%); /* Centralização vertical precisa */
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Controla de forma rígida o tamanho da logo de cada marca para não estourar */
+.icon-circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  display: block;
 }
 
 .link-btn.primary {
@@ -85,8 +120,8 @@ body {
 
 .link-btn.primary:hover {
   background-color: var(--primary-hover);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 75, 124, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 75, 124, 0.15);
 }
 
 .link-btn.secondary {
@@ -103,26 +138,54 @@ body {
 
 .divider {
   height: 1px;
-  background-color: #e2e8f0;
-  margin: 1.5rem 0 0.5rem 0;
+  background-color: #cbd5e1;
+  margin: 1.5rem 0 1rem 0;
 }
 
 .section-title {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   font-weight: 700;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* Container flutuante do QR Code - Ajustado para o canto inferior direito acima do toolbar */
+.qrcode-container {
+  position: fixed;
+  bottom: 80px; /* Aumentado para subir e ficar rente ao topo do toolbar do mapa */
+  right: 24px; /* Movido definitivamente para o lado direito */
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  animation: fadeIn 1s ease-out;
+  z-index: 1000;
+}
+
+.qrcode-container p {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.qrcode-container img {
+  width: 90px; /* Uma leve redução para encaixar perfeitamente sem poluir o visual */
+  height: 90px;
+  display: block;
+}
+
+/* Esconde o QR Code em telas mobile para manter a legibilidade */
+@media (max-width: 768px) {
+  .qrcode-container {
+    display: none;
   }
 }
